@@ -1,0 +1,13 @@
+{
+  "name": "Chai-Browser",
+  "version": "0.0.1",
+  "description": "Helpers to assert CSS values returned by a browser",
+  "main": "runme.js",
+  "author": "Balint Fulop",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "electron": "^1.6.1",
+    "expect.js": "^0.3.1"
+  }
+}
