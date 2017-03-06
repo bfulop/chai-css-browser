@@ -85,7 +85,7 @@ function addChaiColorConvert (chai, utils) {
     this.assert(
       colorsMatch(obj, color)
     , 'expected #{this} to be #{exp} but got #{act}'
-    , 'expected #{this} to not be of type #{act}'
+    , 'expected #{this} to not be  #{act}'
     , color        // expected
     , obj   // actual
     )
