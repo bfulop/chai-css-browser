@@ -2,7 +2,7 @@ module.exports = function (wallaby) {
   return {
     files: [
       './colorconvert.js',
-      {pattern: './expect.js', load: true, instrument: false}
+      {pattern: './node_modules/chai/chai.js', load: true, instrument: false}
     ],
 
     tests: [
@@ -13,6 +13,10 @@ module.exports = function (wallaby) {
 
     env: {
       kind: 'electron'
+    },
+
+    setup: function () {
+      window.expect = chai.expect
     }
 
   }

@@ -75,3 +75,25 @@ function colorsMatch (source, target) {
   target = target.replace(/\s/g, '')
   return convertColorMode(source, getColorMode(target)) === target
 }
+
+// extending chai
+
+function addChaiColorConvert (chai, utils) {
+  var Assertion = chai.Assertion
+  Assertion.addMethod('color', function (color) {
+    var obj = this._obj
+    this.assert(
+      colorsMatch(obj, color)
+    , 'expected #{this} to be #{exp} but got #{act}'
+    , 'expected #{this} to not be of type #{act}'
+    , color        // expected
+    , obj   // actual
+    )
+  })
+}
+
+if (typeof exports === 'object' && exports) {
+  module.exports = {
+    colorconvert: addChaiColorConvert
+  }
+}
