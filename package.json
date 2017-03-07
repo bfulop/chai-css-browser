@@ -1,10 +1,14 @@
 {
-  "name": "Chai-Browser",
+  "name": "CHAI-BROWSER",
   "version": "0.0.1",
   "description": "Helpers to assert CSS values returned by a browser",
-  "main": "runme.js",
+  "main": "chai-browser.js",
   "author": "Balint Fulop",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bfulop/chai-css-browser.git"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "electron": "^1.6.1",
