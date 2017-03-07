@@ -1,6 +1,6 @@
 {
-  "name": "CHAI-BROWSER",
-  "version": "0.0.1",
+  "name": "chai-browser",
+  "version": "0.0.2b",
   "description": "Helpers to assert CSS values returned by a browser",
   "main": "chai-browser.js",
   "author": "Balint Fulop",
